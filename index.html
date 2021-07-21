@@ -20,12 +20,10 @@
         const blueBtn = document.querySelector('.blue-rectangle')
         const appBody = document.getElementsByTagName('body')[0];
 
-        const toggleDarkMode = () => {
+        blueBtn.addEventListener('click', () => {
             appBody.classList.toggle('dark-theme')
             toggleBtn.classList.toggle('toggleRight')
-        }
-
-        blueBtn.addEventListener('click', () => toggleDarkMode())
+        })
     </script>
 </body>
 
