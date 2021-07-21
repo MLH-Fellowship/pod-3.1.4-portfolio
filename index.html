@@ -14,6 +14,19 @@
     {% include experience.html %}
 
     {% include education.html %}
+
+    <script>
+        const toggleBtn = document.querySelector('.white-circle')
+        const blueBtn = document.querySelector('.blue-rectangle')
+        const appBody = document.getElementsByTagName('body')[0];
+
+        const toggleDarkMode = () => {
+            appBody.classList.toggle('dark-theme')
+            toggleBtn.classList.toggle('toggleRight')
+        }
+
+        blueBtn.addEventListener('click', () => toggleDarkMode())
+    </script>
 </body>
 
 </html>
