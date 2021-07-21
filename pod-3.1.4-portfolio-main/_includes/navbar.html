@@ -1,0 +1,27 @@
+<header id="wrapper">
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <img src="./assets/img/logo.svg" alt="Company Logo" />
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="#main">👾 Profile </a></li>
+        <li class="nav-item"><a href="#projects">🛠 Projects </a></li>
+        <li class="nav-item"><a href="#work">💼 Work </a></li>
+        <li class="nav-item"><a href="#edu">🏫 Education </a></li>
+      </ul>
+    </nav>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</header>
+<script>
+  $(".menu-toggle").click(function () {
+    $(".nav").toggleClass("mobile-nav");
+    $(this).toggleClass("is-active");
+  });
+</script>
