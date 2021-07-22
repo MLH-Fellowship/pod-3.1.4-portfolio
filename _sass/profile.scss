@@ -1,7 +1,7 @@
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
+    height: 335px;
     margin-bottom: 50px;
     h1 {
         font-size: 50px;
@@ -24,3 +24,25 @@
         height: 200px;
     }
 }
+
+.res-btn { 
+    margin-top: 15px;
+    padding: 6px 10px 5px 12px;
+    border-radius: 4px;
+    color: #1d539f;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+
+.res-btn:hover { 
+    border: 2px solid #1d539f;  
+}
+
+// to remove outline after click
+.res-btn:focus, [type="submit"]:focus {
+    outline: none;
+}
+
