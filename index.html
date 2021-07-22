@@ -17,6 +17,16 @@
 
     {% include links.html %}
 
+    <script>
+        const toggleBtn = document.querySelector('.white-circle')
+        const blueBtn = document.querySelector('.blue-rectangle')
+        const appBody = document.getElementsByTagName('body')[0];
+
+        blueBtn.addEventListener('click', () => {
+            appBody.classList.toggle('dark-theme')
+            toggleBtn.classList.toggle('toggleRight')
+        })
+    </script> 
 </body>
 
 </html>

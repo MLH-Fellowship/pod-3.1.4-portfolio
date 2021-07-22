@@ -12,3 +12,5 @@ sass:
   sass_dir: _sass
 
 icon: /assets/img/icon.jpg
+# resume link
+resume: https://docs.google.com/document/d/1Lb3IgYz9eK4mDfP0nfY7LOx70Uf4FTf10lKuioHegRQ/edit?usp=sharing
