@@ -5,6 +5,9 @@
 @import 'page';
 @import 'links'; 
 
+html{
+    scroll-behavior: smooth;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
