@@ -1,37 +1,74 @@
 .nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: #1C539F;
-    font-family: "Poppins", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #1c539f;
+  font-family: "Poppins", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
 }
 
 .nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+  display: inline-flex;
+  height: 60%;
+  width: 350px;
 }
 
 .nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
+  height: 60px;
+  margin: auto;
 }
 
 .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.darkModeContainer {
+  position: relative;
+  right: -8px;
+  color: white;
+
+  .blue-rectangle {
+    width: 60px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #2f7cff;
+    position: relative;
+
+    .white-circle {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .dark-text {
+    position: absolute;
+    top: 5px;
+    margin-left: 5px;
+  }
+}
+
+.toggleRight {
+  right: 3px;
+  transition: all 0.4s ease-in;
 }

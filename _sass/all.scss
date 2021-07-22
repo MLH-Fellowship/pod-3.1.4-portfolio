@@ -69,3 +69,27 @@ a {
         width: 100%;
     }
 }
+
+body.dark-theme {
+  background-color: #222 !important;
+  color: #fff;
+  transition: all .3s ease-in;
+
+  .nav-bar, 
+  .profile,
+  .card,
+  .icon-container {
+    background-color: #000 !important;
+    transition: all .3s ease-in;
+  }
+
+  a {
+    color: #fff;
+    transition: all .3s ease-in;
+  }
+
+  .info .dates {
+    color: #aaa;
+    transition: all .3s ease-in;
+  }
+}
