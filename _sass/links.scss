@@ -1,6 +1,5 @@
 .icon-container {
-    position: fixed; 
-    bottom: 0; 
+    margin-top: 30px; 
     width: 100%; 
     display: flex; 
     justify-content: center; 
@@ -12,4 +11,8 @@
 .fa {
     padding: 20px;
     width: 50px;
+}
+
+.fa:hover {
+    text-decoration: none;
 }
