@@ -11,7 +11,11 @@ This is a Jekyll website template designed for Pre Fellowship Fellows. During th
 2. Update `_config.yml` to contain your information.
     1. Change `url` to the URL you'll be hosting it at
     2. Make sure it has the /
-3. Use something like Netlify or GitHub Pages to deploy (note, this only works on username.github.io, not username.github.io/repo-name)
+3. Add your Google Analytics tracking ID
+    1. To create a tracking ID, follow [this tutorial](https://support.google.com/analytics/answer/10269537?ref_topic=1009620)
+    2. Enter your tracking ID into the `google_analytics` field in `_config.yml`
+    3. Analytics will only be tracked in a production environment. To test, use `JEKYLL_ENV=production bundle exec jekyll serve` to simulate production.
+4. Use something like Netlify or GitHub Pages to deploy (note, this only works on username.github.io, not username.github.io/repo-name)
 
 ## Add your portfolio
 

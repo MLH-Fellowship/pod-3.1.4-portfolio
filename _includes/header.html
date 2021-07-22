@@ -29,4 +29,15 @@
     <link lang='sass' rel="stylesheet" href="/assets/css/main.css">
     <link rel='icon' href='/assets/img/favicon.ico' type='image/x-icon' />
     <title>{{ site.title }}</title>
+
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    <!-- Google Analytics -->
+    {<script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    {% endif %}
 </head>
