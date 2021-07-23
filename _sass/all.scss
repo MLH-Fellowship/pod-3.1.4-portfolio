@@ -5,6 +5,9 @@
 @import 'page';
 @import 'links'; 
 
+html{
+    scroll-behavior: smooth;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -26,11 +29,23 @@ h2 {
     flex-direction: row;
     align-items: center;
     margin: 20px 30px;
-    background-color: white;
+    background-color: rgb(216, 209, 209);
     border-radius: .375rem;
     padding: 1.5em;
     font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 1px 5px #00000099;
+    border-radius: 10px;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
 }
+
+.card:hover {
+    transition-duration: 100ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+  }
 
 a {
     color: black;

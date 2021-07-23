@@ -1,15 +1,38 @@
-<header class="nav-bar">
-    <div class="nav-content">
-        <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/logo.svg" />
-            </div>
-        </a>
-        <div class="darkModeContainer">
-            <span class="blue-rectangle"> 
-            <span class="white-circle">&nbsp;</span>
-            </span>
-            <span class="dark-text">Dark Mode</span>
+<header class="wrapper">
+  <!-- nav bar -->
+  <div class="nav-wrapper nav-bar">
+    <nav class="navbar">
+      <img src="./assets/img/logo.svg" alt="Company Logo" />
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="#main">👾 Profile </a></li>
+        <li class="nav-item"><a href="#projects">🛠 Projects </a></li>
+        <li class="nav-item"><a href="#work">💼 Work </a></li>
+        <li class="nav-item"><a href="#edu">🏫 Education </a></li>
+        <li class="nav-item">
+          <div class="darkModeContainer">
+            <span class="blue-rectangle">
+              <span class="white-circle">&nbsp;</span>
+            </span>
+            <span class="dark-text">🌗</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- top button -->
+  <button onclick="topFunction()" id="topBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </header>
+
+<script>
+  $(".menu-toggle").click(function () {
+    $(".nav").toggleClass("mobile-nav");
+    $(this).toggleClass("is-active");
+  });
+</script>
